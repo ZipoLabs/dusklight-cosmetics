@@ -251,6 +251,7 @@ ModResult build_zora_armor_colors(ModContext*, UiElementHandle pane, void*, ModE
     svc_ui->pane_add_section(mod_ctx, pane, "Zora Armor");
     add_cosmetic_option(pane, g_cvars.zoraArmorCapColor, "Cap", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorHelmetColor, "Helmet", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.zoraArmorMaskColor, "Mask", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorTorsoColor, "Torso", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorScalesColor, "Scales", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorFlippersColor, "Flippers", kOverlayPresets);
@@ -572,6 +573,7 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
     REGISTER_COSMETIC_OPTION(herosTunicSkirtColor)
     REGISTER_COSMETIC_OPTION(zoraArmorCapColor)
     REGISTER_COSMETIC_OPTION(zoraArmorHelmetColor)
+    REGISTER_COSMETIC_OPTION(zoraArmorMaskColor)
     REGISTER_COSMETIC_OPTION(zoraArmorTorsoColor)
     REGISTER_COSMETIC_OPTION(zoraArmorScalesColor)
     REGISTER_COSMETIC_OPTION(zoraArmorFlippersColor)

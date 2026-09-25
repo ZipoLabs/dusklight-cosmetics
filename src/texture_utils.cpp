@@ -457,6 +457,13 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "zl_helmet",
                 }
             }},
+            {get_cvars().zoraArmorMaskColor, {
+                {
+                    .arc = "Zmdl",
+                    .modelFileName = "zl.bmd",
+                    .textureName = "zl_mask",
+                }
+            }},
             {get_cvars().zoraArmorTorsoColor, {
                 {
                     .arc = "Zmdl",

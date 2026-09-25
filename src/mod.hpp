@@ -15,6 +15,7 @@ struct cvars {
     ConfigVarHandle herosTunicSkirtColor = 0;
     ConfigVarHandle zoraArmorCapColor = 0;
     ConfigVarHandle zoraArmorHelmetColor = 0;
+    ConfigVarHandle zoraArmorMaskColor = 0;
     ConfigVarHandle zoraArmorTorsoColor = 0;
     ConfigVarHandle zoraArmorScalesColor = 0;
     ConfigVarHandle zoraArmorFlippersColor = 0;
