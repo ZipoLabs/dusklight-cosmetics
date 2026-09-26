@@ -422,6 +422,20 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
 
     if (replacements.empty()) {
         replacements = {
+            {get_cvars().ordonClothesArmWrapsColor, {
+                {
+                    .arc = "Bmdl",
+                    .modelFileName = "bl.bmd",
+                    .textureName = "bl_upbody",
+                }
+            }},
+            {get_cvars().ordonClothesBottomsColor, {
+                {
+                    .arc = "Bmdl",
+                    .modelFileName = "bl.bmd",
+                    .textureName = "bl_lowbody",
+                }
+            }},
             {get_cvars().herosTunicCapColor, {
                 {
                     .arc = "Kmdl",
@@ -546,14 +560,14 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "ml_armor",
                 }
             }},
-            {get_cvars().magicArmorChainMailColor, {
+            {get_cvars().magicArmorBottomsColor, {
                 {
                     .arc = "Mmdl",
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_body",
                 }
             }},
-            { get_cvars().magicArmorArmWrapsColor, {
+            { get_cvars().magicArmorBeltColor, {
                 {
                     .arc = "Mmdl",
                     .modelFileName = "ml.bmd",

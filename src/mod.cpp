@@ -239,6 +239,13 @@ void add_group(
     }
 }
 
+ModResult build_ordon_clothes_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
+    svc_ui->pane_add_section(mod_ctx, pane, "Ordon Clothes");
+    add_cosmetic_option(pane, g_cvars.ordonClothesArmWrapsColor, "Arm Wraps and Top", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.ordonClothesBottomsColor, "Bottoms and Skirt", kOverlayPresets);
+    return MOD_OK;
+}
+
 ModResult build_hero_tunic_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
     svc_ui->pane_add_section(mod_ctx, pane, "Hero's Tunic");
     add_cosmetic_option(pane, g_cvars.herosTunicCapColor, "Cap", kOverlayPresets);
@@ -268,8 +275,8 @@ ModResult build_magic_armor_colors(ModContext*, UiElementHandle pane, void*, Mod
     add_cosmetic_option(pane, g_cvars.magicArmorCapColor, "Cap", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorTiaraColor, "Tiara", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorChestplateColor, "Chestplate and Spaulders", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.magicArmorChainMailColor, "Chain Mail", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.magicArmorArmWrapsColor, "Arm Wraps, Belt and Pouch", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorBottomsColor, "Bottoms and Chain Mail", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorBeltColor, "Belt, Bracers and Pouch", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorVambracesColor, "Vambraces", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorAccessoriesColor, "Accessories", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorBootsColor, "Boots", kOverlayPresets);
@@ -335,6 +342,7 @@ ModResult build_companion_colors(ModContext*, UiElementHandle pane, void*, ModEr
 ModResult build_equipment_colors_tab(
     ModContext*, UiWindowHandle, UiElementHandle left, UiElementHandle right, void*, ModError*) {
     svc_ui->pane_add_section(mod_ctx, left, "Color Groups");
+    add_group(left, right, "Ordon Clothes", build_ordon_clothes_colors);
     add_group(left, right, "Hero's Tunic", build_hero_tunic_colors);
     add_group(left, right, "Zora Armor", build_zora_armor_colors);
     add_group(left, right, "Magic Armor", build_magic_armor_colors);
@@ -587,6 +595,8 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
 
     ModResult result{};
 
+    REGISTER_COSMETIC_OPTION(ordonClothesArmWrapsColor)
+    REGISTER_COSMETIC_OPTION(ordonClothesBottomsColor)
     REGISTER_COSMETIC_OPTION(herosTunicCapColor)
     REGISTER_COSMETIC_OPTION(herosTunicBeltsColor)
     REGISTER_COSMETIC_OPTION(herosTunicChainMailColor)
@@ -604,8 +614,8 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
     REGISTER_COSMETIC_OPTION(magicArmorCapColor)
     REGISTER_COSMETIC_OPTION(magicArmorTiaraColor)
     REGISTER_COSMETIC_OPTION(magicArmorChestplateColor)
-    REGISTER_COSMETIC_OPTION(magicArmorChainMailColor)
-    REGISTER_COSMETIC_OPTION(magicArmorArmWrapsColor)
+    REGISTER_COSMETIC_OPTION(magicArmorBottomsColor)
+    REGISTER_COSMETIC_OPTION(magicArmorBeltColor)
     REGISTER_COSMETIC_OPTION(magicArmorVambracesColor)
     REGISTER_COSMETIC_OPTION(magicArmorAccessoriesColor)
     REGISTER_COSMETIC_OPTION(magicArmorBootsColor)

@@ -10,6 +10,8 @@
 #include <vector>
 
 struct cvars {
+    ConfigVarHandle ordonClothesArmWrapsColor = 0;
+    ConfigVarHandle ordonClothesBottomsColor = 0;
     ConfigVarHandle herosTunicCapColor = 0;
     ConfigVarHandle herosTunicBeltsColor = 0;
     ConfigVarHandle herosTunicChainMailColor = 0;
@@ -27,8 +29,8 @@ struct cvars {
     ConfigVarHandle magicArmorCapColor = 0;
     ConfigVarHandle magicArmorTiaraColor = 0;
     ConfigVarHandle magicArmorChestplateColor = 0;
-    ConfigVarHandle magicArmorChainMailColor = 0;
-    ConfigVarHandle magicArmorArmWrapsColor = 0;
+    ConfigVarHandle magicArmorBottomsColor = 0;
+    ConfigVarHandle magicArmorBeltColor = 0;
     ConfigVarHandle magicArmorVambracesColor = 0;
     ConfigVarHandle magicArmorAccessoriesColor = 0;
     ConfigVarHandle magicArmorBootsColor = 0;
