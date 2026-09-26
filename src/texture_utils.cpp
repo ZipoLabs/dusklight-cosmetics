@@ -429,6 +429,13 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "bl_upbody",
                 }
             }},
+            {get_cvars().ordonClothesBeltColor, {
+                {
+                    .arc = "Bmdl",
+                    .modelFileName = "bl.bmd",
+                    .textureName = "al_belt",
+                }
+            }},
             {get_cvars().ordonClothesBottomsColor, {
                 {
                     .arc = "Bmdl",
@@ -731,6 +738,47 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "Mmdl", // Magic Armor Model
                     .modelFileName = "ml_head.bmd",
                     .textureName = "al_hair",
+                }
+            }},
+            {get_cvars().linkEarringsColor, {
+                {
+                    .arc = "Bmdl", // Ordon Clothes Model
+                    .modelFileName = "bl.bmd",
+                    .textureName = "t_earring_S3TC_test",
+                },
+                {
+                    .arc = "Kmdl", // Hero's Tunic Model
+                    .modelFileName = "al.bmd",
+                    .textureName = "t_earring_S3TC_test",
+                },
+                {
+                    .arc = "Mmdl", // Magic Armor Model
+                    .modelFileName = "ml.bmd",
+                    .textureName = "t_earring_S3TC_test",
+                }
+            }},
+            {get_cvars().linkBracersColor, {
+                {
+                    .arc = "Kmdl", // Hero's Tunic Model
+                    .modelFileName = "al.bmd",
+                    .textureName = "al_armL",
+                },
+                {
+                    .arc = "Mmdl", // Magic Armor Model
+                    .modelFileName = "ml.bmd",
+                    .textureName = "al_armL",
+                }
+            }},
+            {get_cvars().linkVambraceColor, {
+                {
+                    .arc = "Kmdl", // Hero's Tunic Model
+                    .modelFileName = "al.bmd",
+                    .textureName = "al_gauntletL",
+                },
+                {
+                    .arc = "Mmdl", // Magic Armor Model
+                    .modelFileName = "ml.bmd",
+                    .textureName = "al_gauntletL",
                 }
             }},
             {get_cvars().wolfLinkColor, {

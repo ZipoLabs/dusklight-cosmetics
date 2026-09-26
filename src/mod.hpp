@@ -11,6 +11,7 @@
 
 struct cvars {
     ConfigVarHandle ordonClothesArmWrapsColor = 0;
+    ConfigVarHandle ordonClothesBeltColor = 0;
     ConfigVarHandle ordonClothesBottomsColor = 0;
     ConfigVarHandle herosTunicCapColor = 0;
     ConfigVarHandle herosTunicBeltsColor = 0;
@@ -54,6 +55,9 @@ struct cvars {
     ConfigVarHandle midnaHairTipsColor = 0;
     ConfigVarHandle midnaChargeRingColor = 0;
     ConfigVarHandle linkHairColor = 0;
+    ConfigVarHandle linkEarringsColor = 0;
+    ConfigVarHandle linkBracersColor = 0;
+    ConfigVarHandle linkVambraceColor = 0;
     ConfigVarHandle wolfLinkColor = 0;
     ConfigVarHandle eponaColor = 0;
 };

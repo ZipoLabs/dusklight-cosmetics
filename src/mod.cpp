@@ -242,6 +242,7 @@ void add_group(
 ModResult build_ordon_clothes_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
     svc_ui->pane_add_section(mod_ctx, pane, "Ordon Clothes");
     add_cosmetic_option(pane, g_cvars.ordonClothesArmWrapsColor, "Arm Wraps and Top", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.ordonClothesBeltColor, "Belt", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.ordonClothesBottomsColor, "Bottoms and Skirt", kOverlayPresets);
     return MOD_OK;
 }
@@ -323,6 +324,9 @@ ModResult build_hud_colors(ModContext*, UiElementHandle pane, void*, ModError*) 
 ModResult build_link_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
     svc_ui->pane_add_section(mod_ctx, pane, "Link");
     add_cosmetic_option(pane, g_cvars.linkHairColor, "Hair", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.linkEarringsColor, "Earrings", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.linkBracersColor, "Bracers", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.linkVambraceColor, "Vambrace", kOverlayPresets);
     return MOD_OK;
 }
 
@@ -596,6 +600,7 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
     ModResult result{};
 
     REGISTER_COSMETIC_OPTION(ordonClothesArmWrapsColor)
+    REGISTER_COSMETIC_OPTION(ordonClothesBeltColor)
     REGISTER_COSMETIC_OPTION(ordonClothesBottomsColor)
     REGISTER_COSMETIC_OPTION(herosTunicCapColor)
     REGISTER_COSMETIC_OPTION(herosTunicBeltsColor)
@@ -648,6 +653,9 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
 
     REGISTER_COSMETIC_OPTION(midnaChargeRingColor)
     REGISTER_COSMETIC_OPTION(linkHairColor)
+    REGISTER_COSMETIC_OPTION(linkEarringsColor)
+    REGISTER_COSMETIC_OPTION(linkBracersColor)
+    REGISTER_COSMETIC_OPTION(linkVambraceColor)
     REGISTER_COSMETIC_OPTION(wolfLinkColor)
     REGISTER_COSMETIC_OPTION(eponaColor)
 
