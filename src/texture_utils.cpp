@@ -429,7 +429,21 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "al_cap",
                 }
             }},
-            {get_cvars().herosTunicTorsoColor, {
+            {get_cvars().herosTunicBeltsColor, {
+                {
+                    .arc = "Kmdl",
+                    .modelFileName = "al.bmd",
+                    .textureName = "al_belts",
+                }
+            }},
+            {get_cvars().herosTunicChainMailColor, {
+                {
+                    .arc = "Kmdl",
+                    .modelFileName = "al.bmd",
+                    .textureName = "al_inner",
+                }
+            }},
+            {get_cvars().herosTunicTopColor, {
                 {
                     .arc = "Kmdl",
                     .modelFileName = "al.bmd",
@@ -441,6 +455,20 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "Kmdl",
                     .modelFileName = "al.bmd",
                     .textureName = "al_lowbody",
+                }
+            }},
+            {get_cvars().herosTunicBottomsColor, {
+                {
+                    .arc = "Kmdl",
+                    .modelFileName = "al.bmd",
+                    .textureName = "al_pants",
+                }
+            }},
+            {get_cvars().herosTunicBootsColor, {
+                {
+                    .arc = "Kmdl",
+                    .modelFileName = "al.bmd",
+                    .textureName = "al_boots",
                 }
             }},
             {get_cvars().zoraArmorCapColor, {
@@ -464,7 +492,14 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "zl_mask",
                 }
             }},
-            {get_cvars().zoraArmorTorsoColor, {
+            {get_cvars().zoraArmorBottomsColor, {
+                {
+                    .arc = "Zmdl",
+                    .modelFileName = "zl.bmd",
+                    .textureName = "zl_body",
+                }
+            }},
+            {get_cvars().zoraArmorShouldersColor, {
                 {
                     .arc = "Zmdl",
                     .modelFileName = "zl.bmd",
@@ -474,27 +509,6 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "Zmdl",
                     .modelFileName = "zl.bmd",
                     .textureName = "zl_armL",
-                }
-            }},
-            {get_cvars().zoraArmorScalesColor, {
-                {
-                    .arc = "Zmdl",
-                    .modelFileName = "zl.bmd",
-                    .textureName = "zl_body",
-                }
-            }},
-            {get_cvars().zoraArmorGauntletColor, {
-                {
-                    .arc = "Zmdl",
-                    .modelFileName = "zl.bmd",
-                    .textureName = "al_gauntletL",
-                }
-            }},
-            {get_cvars().zoraArmorArmbandsColor, {
-                {
-                    .arc = "Zmdl",
-                    .modelFileName = "zl.bmd",
-                    .textureName = "al_armL",
                 }
             }},
             {get_cvars().zoraArmorBeltColor, {
@@ -525,34 +539,34 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "ml_tiara",
                 }
             }},
-            {get_cvars().magicArmorTorsoColor, {
+            {get_cvars().magicArmorChestplateColor, {
                 {
                     .arc = "Mmdl",
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_armor",
                 }
             }},
-            {get_cvars().magicArmorChainmailColor, {
+            {get_cvars().magicArmorChainMailColor, {
                 {
                     .arc = "Mmdl",
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_body",
                 }
             }},
-            {get_cvars().magicArmorGauntletsColor, {
-                {
-                    .arc = "Mmdl",
-                    .modelFileName = "ml.bmd",
-                    .textureName = "ml_gauntlet",
-                }
-            }},
-            { get_cvars().magicArmorArmbandsColor, {
+            { get_cvars().magicArmorArmWrapsColor, {
                 {
                     .arc = "Mmdl",
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_belts",
                 }
             } },
+            {get_cvars().magicArmorVambracesColor, {
+                {
+                    .arc = "Mmdl",
+                    .modelFileName = "ml.bmd",
+                    .textureName = "ml_gauntlet",
+                }
+            }},
             { get_cvars().magicArmorAccessoriesColor, {
                 {
                     .arc = "Mmdl",

@@ -11,23 +11,25 @@
 
 struct cvars {
     ConfigVarHandle herosTunicCapColor = 0;
-    ConfigVarHandle herosTunicTorsoColor = 0;
+    ConfigVarHandle herosTunicBeltsColor = 0;
+    ConfigVarHandle herosTunicChainMailColor = 0;
+    ConfigVarHandle herosTunicTopColor = 0;
     ConfigVarHandle herosTunicSkirtColor = 0;
+    ConfigVarHandle herosTunicBottomsColor = 0;
+    ConfigVarHandle herosTunicBootsColor = 0;
     ConfigVarHandle zoraArmorCapColor = 0;
     ConfigVarHandle zoraArmorHelmetColor = 0;
     ConfigVarHandle zoraArmorMaskColor = 0;
-    ConfigVarHandle zoraArmorTorsoColor = 0;
-    ConfigVarHandle zoraArmorScalesColor = 0;
-    ConfigVarHandle zoraArmorGauntletColor = 0;
-    ConfigVarHandle zoraArmorArmbandsColor = 0;
+    ConfigVarHandle zoraArmorBottomsColor = 0;
+    ConfigVarHandle zoraArmorShouldersColor = 0;
     ConfigVarHandle zoraArmorBeltColor = 0;
     ConfigVarHandle zoraArmorFlippersColor = 0;
     ConfigVarHandle magicArmorCapColor = 0;
     ConfigVarHandle magicArmorTiaraColor = 0;
-    ConfigVarHandle magicArmorTorsoColor = 0;
-    ConfigVarHandle magicArmorChainmailColor = 0;
-    ConfigVarHandle magicArmorGauntletsColor = 0;
-    ConfigVarHandle magicArmorArmbandsColor = 0;
+    ConfigVarHandle magicArmorChestplateColor = 0;
+    ConfigVarHandle magicArmorChainMailColor = 0;
+    ConfigVarHandle magicArmorArmWrapsColor = 0;
+    ConfigVarHandle magicArmorVambracesColor = 0;
     ConfigVarHandle magicArmorAccessoriesColor = 0;
     ConfigVarHandle magicArmorBootsColor = 0;
     ConfigVarHandle lanternGlowColor = 0;

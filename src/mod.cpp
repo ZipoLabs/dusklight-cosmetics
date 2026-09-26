@@ -242,8 +242,12 @@ void add_group(
 ModResult build_hero_tunic_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
     svc_ui->pane_add_section(mod_ctx, pane, "Hero's Tunic");
     add_cosmetic_option(pane, g_cvars.herosTunicCapColor, "Cap", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.herosTunicTorsoColor, "Body", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.herosTunicBeltsColor, "Belts, Pouch and Undershirt", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.herosTunicChainMailColor, "Chain Mail", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.herosTunicTopColor, "Top", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.herosTunicSkirtColor, "Skirt", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.herosTunicBottomsColor, "Bottoms", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.herosTunicBootsColor, "Boots", kOverlayPresets);
     return MOD_OK;
 }
 
@@ -252,10 +256,8 @@ ModResult build_zora_armor_colors(ModContext*, UiElementHandle pane, void*, ModE
     add_cosmetic_option(pane, g_cvars.zoraArmorCapColor, "Cap", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorHelmetColor, "Helmet", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorMaskColor, "Mask", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.zoraArmorTorsoColor, "Torso", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.zoraArmorScalesColor, "Scales", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.zoraArmorGauntletColor, "Gauntlet", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.zoraArmorArmbandsColor, "Armbands", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.zoraArmorBottomsColor, "Bottoms and Scales", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.zoraArmorShouldersColor, "Shoulders and Skirt", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorBeltColor, "Belt and Pouch", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorFlippersColor, "Flippers", kOverlayPresets);
     return MOD_OK;
@@ -265,10 +267,10 @@ ModResult build_magic_armor_colors(ModContext*, UiElementHandle pane, void*, Mod
     svc_ui->pane_add_section(mod_ctx, pane, "Magic Armor");
     add_cosmetic_option(pane, g_cvars.magicArmorCapColor, "Cap", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorTiaraColor, "Tiara", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.magicArmorTorsoColor, "Torso", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.magicArmorChainmailColor, "Chainmail", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.magicArmorGauntletsColor, "Gauntlets", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.magicArmorArmbandsColor, "Armbands, Belt and Pouch", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorChestplateColor, "Chestplate and Spaulders", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorChainMailColor, "Chain Mail", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorArmWrapsColor, "Arm Wraps, Belt and Pouch", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorVambracesColor, "Vambraces", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorAccessoriesColor, "Accessories", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorBootsColor, "Boots", kOverlayPresets);
     return MOD_OK;
@@ -586,23 +588,25 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
     ModResult result{};
 
     REGISTER_COSMETIC_OPTION(herosTunicCapColor)
-    REGISTER_COSMETIC_OPTION(herosTunicTorsoColor)
+    REGISTER_COSMETIC_OPTION(herosTunicBeltsColor)
+    REGISTER_COSMETIC_OPTION(herosTunicChainMailColor)
+    REGISTER_COSMETIC_OPTION(herosTunicTopColor)
     REGISTER_COSMETIC_OPTION(herosTunicSkirtColor)
+    REGISTER_COSMETIC_OPTION(herosTunicBottomsColor)
+    REGISTER_COSMETIC_OPTION(herosTunicBootsColor)
     REGISTER_COSMETIC_OPTION(zoraArmorCapColor)
     REGISTER_COSMETIC_OPTION(zoraArmorHelmetColor)
     REGISTER_COSMETIC_OPTION(zoraArmorMaskColor)
-    REGISTER_COSMETIC_OPTION(zoraArmorTorsoColor)
-    REGISTER_COSMETIC_OPTION(zoraArmorScalesColor)
-    REGISTER_COSMETIC_OPTION(zoraArmorGauntletColor)
-    REGISTER_COSMETIC_OPTION(zoraArmorArmbandsColor)
+    REGISTER_COSMETIC_OPTION(zoraArmorBottomsColor)
+    REGISTER_COSMETIC_OPTION(zoraArmorShouldersColor)
     REGISTER_COSMETIC_OPTION(zoraArmorBeltColor)
     REGISTER_COSMETIC_OPTION(zoraArmorFlippersColor)
     REGISTER_COSMETIC_OPTION(magicArmorCapColor)
     REGISTER_COSMETIC_OPTION(magicArmorTiaraColor)
-    REGISTER_COSMETIC_OPTION(magicArmorTorsoColor)
-    REGISTER_COSMETIC_OPTION(magicArmorChainmailColor)
-    REGISTER_COSMETIC_OPTION(magicArmorGauntletsColor)
-    REGISTER_COSMETIC_OPTION(magicArmorArmbandsColor)
+    REGISTER_COSMETIC_OPTION(magicArmorChestplateColor)
+    REGISTER_COSMETIC_OPTION(magicArmorChainMailColor)
+    REGISTER_COSMETIC_OPTION(magicArmorArmWrapsColor)
+    REGISTER_COSMETIC_OPTION(magicArmorVambracesColor)
     REGISTER_COSMETIC_OPTION(magicArmorAccessoriesColor)
     REGISTER_COSMETIC_OPTION(magicArmorBootsColor)
     REGISTER_COSMETIC_OPTION(lanternGlowColor)
