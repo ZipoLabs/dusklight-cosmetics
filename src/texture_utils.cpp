@@ -490,6 +490,62 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "zl_boots",
                 }
             }},
+            {get_cvars().magicArmorCapColor, {
+                {
+                    .arc = "Mmdl",
+                    .modelFileName = "ml_head.bmd",
+                    .textureName = "ml_cap",
+                }
+            }},
+            {get_cvars().magicArmorTiaraColor, {
+                {
+                    .arc = "Mmdl",
+                    .modelFileName = "ml_head.bmd",
+                    .textureName = "ml_tiara",
+                }
+            }},
+            {get_cvars().magicArmorTorsoColor, {
+                {
+                    .arc = "Mmdl",
+                    .modelFileName = "ml.bmd",
+                    .textureName = "ml_armor",
+                }
+            }},
+            {get_cvars().magicArmorChainmailColor, {
+                {
+                    .arc = "Mmdl",
+                    .modelFileName = "ml.bmd",
+                    .textureName = "ml_body",
+                }
+            }},
+            {get_cvars().magicArmorGauntletColor, {
+                {
+                    .arc = "Mmdl",
+                    .modelFileName = "ml.bmd",
+                    .textureName = "ml_gauntlet",
+                }
+            }},
+            { get_cvars().magicArmorArmbandsColor, {
+                {
+                    .arc = "Mmdl",
+                    .modelFileName = "ml.bmd",
+                    .textureName = "ml_belts",
+                }
+            } },
+            { get_cvars().magicArmorAccessoriesColor, {
+                {
+                    .arc = "Mmdl",
+                    .modelFileName = "ml.bmd",
+                    .textureName = "ml_accessory",
+                }
+            } },
+            {get_cvars().magicArmorBootsColor, {
+                {
+                    .arc = "Mmdl",
+                    .modelFileName = "ml.bmd",
+                    .textureName = "ml_boots",
+                }
+            }},
             {get_cvars().woodenSwordColor, {
                 {
                     .arc = "Bmdl", // Ordon Clothes Model

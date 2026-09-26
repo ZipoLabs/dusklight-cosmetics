@@ -258,6 +258,19 @@ ModResult build_zora_armor_colors(ModContext*, UiElementHandle pane, void*, ModE
     return MOD_OK;
 }
 
+ModResult build_magic_armor_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
+    svc_ui->pane_add_section(mod_ctx, pane, "Magic Armor");
+    add_cosmetic_option(pane, g_cvars.magicArmorCapColor, "Cap", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorTiaraColor, "Tiara", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorTorsoColor, "Torso", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorChainmailColor, "Chainmail", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorGauntletColor, "Gauntlet", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorArmbandsColor, "Armbands, Belt and Pouch", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorAccessoriesColor, "Accessories", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorBootsColor, "Boots", kOverlayPresets);
+    return MOD_OK;
+}
+
 ModResult build_sword_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
     svc_ui->pane_add_section(mod_ctx, pane, "Swords");
     add_cosmetic_option(pane, g_cvars.woodenSwordColor, "Wooden Sword", kOverlayPresets);
@@ -319,6 +332,7 @@ ModResult build_equipment_colors_tab(
     svc_ui->pane_add_section(mod_ctx, left, "Color Groups");
     add_group(left, right, "Hero's Tunic", build_hero_tunic_colors);
     add_group(left, right, "Zora Armor", build_zora_armor_colors);
+    add_group(left, right, "Magic Armor", build_magic_armor_colors);
     add_group(left, right, "Swords", build_sword_colors);
     add_group(left, right, "Equipment", build_equipment_colors);
 
@@ -577,6 +591,14 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
     REGISTER_COSMETIC_OPTION(zoraArmorTorsoColor)
     REGISTER_COSMETIC_OPTION(zoraArmorScalesColor)
     REGISTER_COSMETIC_OPTION(zoraArmorFlippersColor)
+    REGISTER_COSMETIC_OPTION(magicArmorCapColor)
+    REGISTER_COSMETIC_OPTION(magicArmorTiaraColor)
+    REGISTER_COSMETIC_OPTION(magicArmorTorsoColor)
+    REGISTER_COSMETIC_OPTION(magicArmorChainmailColor)
+    REGISTER_COSMETIC_OPTION(magicArmorGauntletColor)
+    REGISTER_COSMETIC_OPTION(magicArmorArmbandsColor)
+    REGISTER_COSMETIC_OPTION(magicArmorAccessoriesColor)
+    REGISTER_COSMETIC_OPTION(magicArmorBootsColor)
     REGISTER_COSMETIC_OPTION(lanternGlowColor)
     REGISTER_COSMETIC_OPTION(woodenSwordColor)
     REGISTER_COSMETIC_OPTION(ordonSwordBladeColor)
