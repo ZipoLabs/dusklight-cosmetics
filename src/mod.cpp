@@ -254,6 +254,9 @@ ModResult build_zora_armor_colors(ModContext*, UiElementHandle pane, void*, ModE
     add_cosmetic_option(pane, g_cvars.zoraArmorMaskColor, "Mask", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorTorsoColor, "Torso", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorScalesColor, "Scales", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.zoraArmorGauntletColor, "Gauntlet", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.zoraArmorArmbandsColor, "Armbands", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.zoraArmorBeltColor, "Belt and Pouch", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorFlippersColor, "Flippers", kOverlayPresets);
     return MOD_OK;
 }
@@ -264,7 +267,7 @@ ModResult build_magic_armor_colors(ModContext*, UiElementHandle pane, void*, Mod
     add_cosmetic_option(pane, g_cvars.magicArmorTiaraColor, "Tiara", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorTorsoColor, "Torso", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorChainmailColor, "Chainmail", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.magicArmorGauntletColor, "Gauntlet", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorGauntletsColor, "Gauntlets", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorArmbandsColor, "Armbands, Belt and Pouch", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorAccessoriesColor, "Accessories", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorBootsColor, "Boots", kOverlayPresets);
@@ -590,12 +593,15 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
     REGISTER_COSMETIC_OPTION(zoraArmorMaskColor)
     REGISTER_COSMETIC_OPTION(zoraArmorTorsoColor)
     REGISTER_COSMETIC_OPTION(zoraArmorScalesColor)
+    REGISTER_COSMETIC_OPTION(zoraArmorGauntletColor)
+    REGISTER_COSMETIC_OPTION(zoraArmorArmbandsColor)
+    REGISTER_COSMETIC_OPTION(zoraArmorBeltColor)
     REGISTER_COSMETIC_OPTION(zoraArmorFlippersColor)
     REGISTER_COSMETIC_OPTION(magicArmorCapColor)
     REGISTER_COSMETIC_OPTION(magicArmorTiaraColor)
     REGISTER_COSMETIC_OPTION(magicArmorTorsoColor)
     REGISTER_COSMETIC_OPTION(magicArmorChainmailColor)
-    REGISTER_COSMETIC_OPTION(magicArmorGauntletColor)
+    REGISTER_COSMETIC_OPTION(magicArmorGauntletsColor)
     REGISTER_COSMETIC_OPTION(magicArmorArmbandsColor)
     REGISTER_COSMETIC_OPTION(magicArmorAccessoriesColor)
     REGISTER_COSMETIC_OPTION(magicArmorBootsColor)

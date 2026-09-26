@@ -18,12 +18,15 @@ struct cvars {
     ConfigVarHandle zoraArmorMaskColor = 0;
     ConfigVarHandle zoraArmorTorsoColor = 0;
     ConfigVarHandle zoraArmorScalesColor = 0;
+    ConfigVarHandle zoraArmorGauntletColor = 0;
+    ConfigVarHandle zoraArmorArmbandsColor = 0;
+    ConfigVarHandle zoraArmorBeltColor = 0;
     ConfigVarHandle zoraArmorFlippersColor = 0;
     ConfigVarHandle magicArmorCapColor = 0;
     ConfigVarHandle magicArmorTiaraColor = 0;
     ConfigVarHandle magicArmorTorsoColor = 0;
     ConfigVarHandle magicArmorChainmailColor = 0;
-    ConfigVarHandle magicArmorGauntletColor = 0;
+    ConfigVarHandle magicArmorGauntletsColor = 0;
     ConfigVarHandle magicArmorArmbandsColor = 0;
     ConfigVarHandle magicArmorAccessoriesColor = 0;
     ConfigVarHandle magicArmorBootsColor = 0;

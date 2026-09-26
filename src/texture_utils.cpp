@@ -483,6 +483,27 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "zl_body",
                 }
             }},
+            {get_cvars().zoraArmorGauntletColor, {
+                {
+                    .arc = "Zmdl",
+                    .modelFileName = "zl.bmd",
+                    .textureName = "al_gauntletL",
+                }
+            }},
+            {get_cvars().zoraArmorArmbandsColor, {
+                {
+                    .arc = "Zmdl",
+                    .modelFileName = "zl.bmd",
+                    .textureName = "al_armL",
+                }
+            }},
+            {get_cvars().zoraArmorBeltColor, {
+                {
+                    .arc = "Zmdl",
+                    .modelFileName = "zl.bmd",
+                    .textureName = "al_belt",
+                }
+            }},
             {get_cvars().zoraArmorFlippersColor, {
                 {
                     .arc = "Zmdl",
@@ -518,7 +539,7 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "ml_body",
                 }
             }},
-            {get_cvars().magicArmorGauntletColor, {
+            {get_cvars().magicArmorGauntletsColor, {
                 {
                     .arc = "Mmdl",
                     .modelFileName = "ml.bmd",
