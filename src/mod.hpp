@@ -29,7 +29,7 @@ struct cvars {
     ConfigVarHandle zoraArmorFlippersColor = 0;
     ConfigVarHandle magicArmorCapColor = 0;
     ConfigVarHandle magicArmorTiaraColor = 0;
-    ConfigVarHandle magicArmorChestplateColor = 0;
+    ConfigVarHandle magicArmorCuirassColor = 0;
     ConfigVarHandle magicArmorChainMailColor = 0;
     ConfigVarHandle magicArmorBeltColor = 0;
     ConfigVarHandle magicArmorAccessoriesColor = 0;

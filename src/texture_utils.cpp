@@ -595,9 +595,9 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "ml_tiara"
                 }
             }},
-            {get_cvars().magicArmorChestplateColor, {
+            {get_cvars().magicArmorCuirassColor, {
                 {
-                    .arc = "Mmdl", // Magic Armor chest plate and spaulders worn by Link
+                    .arc = "Mmdl", // Magic Armor cuirass and spaulders worn by Link
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_armor",
                 },

@@ -275,7 +275,7 @@ ModResult build_magic_armor_colors(ModContext*, UiElementHandle pane, void*, Mod
     svc_ui->pane_add_section(mod_ctx, pane, "Magic Armor");
     add_cosmetic_option(pane, g_cvars.magicArmorCapColor, "Cap", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorTiaraColor, "Tiara", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.magicArmorChestplateColor, "Chestplate and Spaulders", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorCuirassColor, "Cuirass and Spaulders", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorChainMailColor, "Chain Mail and Bottoms", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorBeltColor, "Belt, Pouch and Bracers", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorAccessoriesColor, "Accessories", kOverlayPresets);
@@ -632,7 +632,7 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
     REGISTER_COSMETIC_OPTION(zoraArmorFlippersColor)
     REGISTER_COSMETIC_OPTION(magicArmorCapColor)
     REGISTER_COSMETIC_OPTION(magicArmorTiaraColor)
-    REGISTER_COSMETIC_OPTION(magicArmorChestplateColor)
+    REGISTER_COSMETIC_OPTION(magicArmorCuirassColor)
     REGISTER_COSMETIC_OPTION(magicArmorChainMailColor)
     REGISTER_COSMETIC_OPTION(magicArmorBeltColor)
     REGISTER_COSMETIC_OPTION(magicArmorAccessoriesColor)
