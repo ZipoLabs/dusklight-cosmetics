@@ -247,7 +247,7 @@ ModResult build_ordon_clothes_colors(ModContext*, UiElementHandle pane, void*, M
     return MOD_OK;
 }
 
-ModResult build_hero_tunic_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
+ModResult build_heros_clothes_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
     svc_ui->pane_add_section(mod_ctx, pane, "Hero's Clothes");
     add_cosmetic_option(pane, g_cvars.herosClothesCapColor, "Cap", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.herosClothesUndershirtColor, "Undershirt, Belts and Pouch", kOverlayPresets);
@@ -360,7 +360,7 @@ ModResult build_equipment_colors_tab(
     ModContext*, UiWindowHandle, UiElementHandle left, UiElementHandle right, void*, ModError*) {
     svc_ui->pane_add_section(mod_ctx, left, "Color Groups");
     add_group(left, right, "Ordon Clothes", build_ordon_clothes_colors);
-    add_group(left, right, "Hero's Tunic", build_hero_tunic_colors);
+    add_group(left, right, "Hero's Clothes", build_heros_clothes_colors);
     add_group(left, right, "Zora Armor", build_zora_armor_colors);
     add_group(left, right, "Magic Armor", build_magic_armor_colors);
     add_group(left, right, "Swords", build_sword_colors);
