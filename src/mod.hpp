@@ -31,8 +31,8 @@ struct cvars {
     ConfigVarHandle magicArmorTiaraColor = 0;
     ConfigVarHandle magicArmorCuirassColor = 0;
     ConfigVarHandle magicArmorChainMailColor = 0;
-    ConfigVarHandle magicArmorBeltColor = 0;
     ConfigVarHandle magicArmorAccessoriesColor = 0;
+    ConfigVarHandle magicArmorBeltColor = 0;
     ConfigVarHandle magicArmorVambracesColor = 0;
     ConfigVarHandle magicArmorBootsColor = 0;
     ConfigVarHandle woodenSwordColor = 0;

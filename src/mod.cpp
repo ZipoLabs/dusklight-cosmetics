@@ -277,8 +277,8 @@ ModResult build_magic_armor_colors(ModContext*, UiElementHandle pane, void*, Mod
     add_cosmetic_option(pane, g_cvars.magicArmorTiaraColor, "Tiara", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorCuirassColor, "Cuirass and Spaulders", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorChainMailColor, "Chain Mail and Bottoms", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.magicArmorBeltColor, "Belt, Pouch and Bracers", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorAccessoriesColor, "Accessories", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorBeltColor, "Belt, Pouch and Bracers", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorVambracesColor, "Vambraces", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorBootsColor, "Boots", kOverlayPresets);
     return MOD_OK;
@@ -634,8 +634,8 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
     REGISTER_COSMETIC_OPTION(magicArmorTiaraColor)
     REGISTER_COSMETIC_OPTION(magicArmorCuirassColor)
     REGISTER_COSMETIC_OPTION(magicArmorChainMailColor)
-    REGISTER_COSMETIC_OPTION(magicArmorBeltColor)
     REGISTER_COSMETIC_OPTION(magicArmorAccessoriesColor)
+    REGISTER_COSMETIC_OPTION(magicArmorBeltColor)
     REGISTER_COSMETIC_OPTION(magicArmorVambracesColor)
     REGISTER_COSMETIC_OPTION(magicArmorBootsColor)
     REGISTER_COSMETIC_OPTION(woodenSwordColor)

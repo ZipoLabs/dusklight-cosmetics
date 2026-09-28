@@ -629,18 +629,6 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "ml_body"
                 }
             }},
-            { get_cvars().magicArmorBeltColor, {
-                {
-                    .arc = "Mmdl", // Magic Armor belt, pouch and bracers worn by Link
-                    .modelFileName = "ml.bmd",
-                    .textureName = "ml_belts",
-                },
-                {
-                    .arc = "O_mD_marm", // Shop model
-                    .modelFileName = "o_md_marmor.bmd",
-                    .textureName = "ml_belts"
-                }
-            }},
             {get_cvars().magicArmorAccessoriesColor, {
                 {
                     .arc = "Mmdl", // Magic Armor accessories worn by Link
@@ -656,6 +644,18 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "O_mD_marm", // Shop model
                     .modelFileName = "o_md_marmor.bmd",
                     .textureName = "ml_accessory"
+                }
+            }},
+            {get_cvars().magicArmorBeltColor, {
+                {
+                    .arc = "Mmdl", // Magic Armor belt, pouch and bracers worn by Link
+                    .modelFileName = "ml.bmd",
+                    .textureName = "ml_belts",
+                },
+                {
+                    .arc = "O_mD_marm", // Shop model
+                    .modelFileName = "o_md_marmor.bmd",
+                    .textureName = "ml_belts"
                 }
             }},
             {get_cvars().magicArmorVambracesColor, {
