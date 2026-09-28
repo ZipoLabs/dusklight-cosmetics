@@ -429,9 +429,9 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "bl_upbody",
                 }
             }},
-            {get_cvars().ordonClothesBeltColor, {
+            {get_cvars().ordonClothesBaldricColor, {
                 {
-                    .arc = "Bmdl", // Ordon Clothes belt worn by Link
+                    .arc = "Bmdl", // Ordon Clothes baldric worn by Link
                     .modelFileName = "bl.bmd",
                     .textureName = "al_belt",
                 }
@@ -452,7 +452,7 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
             }},
             {get_cvars().herosClothesUndershirtColor, {
                 {
-                    .arc = "Kmdl", // Hero's Clothes undershirt, belts and pouch worn by Link
+                    .arc = "Kmdl", // Hero's Clothes undershirt, baldric, belt and pouch worn by Link
                     .modelFileName = "al.bmd",
                     .textureName = "al_belts",
                 }
@@ -552,9 +552,9 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "zl_body",
                 }
             }},
-            {get_cvars().zoraArmorBeltColor, {
+            {get_cvars().zoraArmorBaldricColor, {
                 {
-                    .arc = "Zmdl", // Zora Armor belt and pouch worn by Link
+                    .arc = "Zmdl", // Zora Armor baldric and pouch worn by Link
                     .modelFileName = "zl.bmd",
                     .textureName = "al_belt",
                 }
@@ -595,23 +595,6 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "ml_tiara"
                 }
             }},
-            {get_cvars().magicArmorCuirassColor, {
-                {
-                    .arc = "Mmdl", // Magic Armor cuirass and spaulders worn by Link
-                    .modelFileName = "ml.bmd",
-                    .textureName = "ml_armor",
-                },
-                {
-                    .arc = "O_gD_marm", // Get Item model
-                    .modelFileName = "o_gd_al_marmor.bmd",
-                    .textureName = "ml_armor"
-                },
-                {
-                    .arc = "O_mD_marm", // Shop model
-                    .modelFileName = "o_md_marmor.bmd",
-                    .textureName = "ml_armor"
-                }
-            }},
             {get_cvars().magicArmorChainMailColor, {
                 {
                     .arc = "Mmdl", // Magic Armor chain mail and bottoms worn by Link
@@ -627,6 +610,23 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "O_mD_marm", // Shop model
                     .modelFileName = "o_md_marmor.bmd",
                     .textureName = "ml_body"
+                }
+            }},
+            {get_cvars().magicArmorCuirassColor, {
+                {
+                    .arc = "Mmdl", // Magic Armor cuirass and spaulders worn by Link
+                    .modelFileName = "ml.bmd",
+                    .textureName = "ml_armor",
+                },
+                {
+                    .arc = "O_gD_marm", // Get Item model
+                    .modelFileName = "o_gd_al_marmor.bmd",
+                    .textureName = "ml_armor"
+                },
+                {
+                    .arc = "O_mD_marm", // Shop model
+                    .modelFileName = "o_md_marmor.bmd",
+                    .textureName = "ml_armor"
                 }
             }},
             {get_cvars().magicArmorAccessoriesColor, {
@@ -646,9 +646,9 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "ml_accessory"
                 }
             }},
-            {get_cvars().magicArmorBeltColor, {
+            {get_cvars().magicArmorBaldricColor, {
                 {
-                    .arc = "Mmdl", // Magic Armor belt, pouch and bracers worn by Link
+                    .arc = "Mmdl", // Magic Armor baldric, pouch and bracers worn by Link
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_belts",
                 },
@@ -723,9 +723,9 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "al_SWgripA",
                 }
             }},
-            {get_cvars().ordonSwordSheathColor, {
+            {get_cvars().ordonSwordScabbardColor, {
                 {
-                    .arc = "Alink", // Ordon Sword sheath worn by Link
+                    .arc = "Alink", // Ordon Sword scabbard worn by Link
                     .modelFileName = "al_poda.bmd",
                     .textureName = "al_podA",
                 },
@@ -749,9 +749,9 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "al_SWgripM",
                 }
             }},
-            {get_cvars().masterSwordSheathColor, {
+            {get_cvars().masterSwordScabbardColor, {
                 {
-                    .arc = "Alink", // Master Sword sheath worn by Link
+                    .arc = "Alink", // Master Sword scabbard worn by Link
                     .modelFileName = "al_podm.bmd",
                     .textureName = "al_podM"
                 }
@@ -992,8 +992,8 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "al_armL",
                 },
                 {
-                    .arc = "Mmdl", // Magic Armor model
-                    .modelFileName = "ml.bmd",
+                    .arc = "zmdl", // Zora Armor model
+                    .modelFileName = "zl.bmd",
                     .textureName = "al_armL",
                 }
             }},
@@ -1004,8 +1004,8 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "al_gauntletL",
                 },
                 {
-                    .arc = "Mmdl", // Magic Armor model
-                    .modelFileName = "ml.bmd",
+                    .arc = "Zmdl", // Zora Armor model
+                    .modelFileName = "zl.bmd",
                     .textureName = "al_gauntletL",
                 }
             }},

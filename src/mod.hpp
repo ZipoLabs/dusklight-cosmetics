@@ -11,7 +11,7 @@
 
 struct cvars {
     ConfigVarHandle ordonClothesTopColor = 0;
-    ConfigVarHandle ordonClothesBeltColor = 0;
+    ConfigVarHandle ordonClothesBaldricColor = 0;
     ConfigVarHandle ordonClothesSkirtColor = 0;
     ConfigVarHandle herosClothesCapColor = 0;
     ConfigVarHandle herosClothesUndershirtColor = 0;
@@ -25,23 +25,23 @@ struct cvars {
     ConfigVarHandle zoraArmorMaskColor = 0;
     ConfigVarHandle zoraArmorScalesColor = 0;
     ConfigVarHandle zoraArmorPauldronsColor = 0;
-    ConfigVarHandle zoraArmorBeltColor = 0;
+    ConfigVarHandle zoraArmorBaldricColor = 0;
     ConfigVarHandle zoraArmorFlippersColor = 0;
     ConfigVarHandle magicArmorCapColor = 0;
     ConfigVarHandle magicArmorTiaraColor = 0;
-    ConfigVarHandle magicArmorCuirassColor = 0;
     ConfigVarHandle magicArmorChainMailColor = 0;
+    ConfigVarHandle magicArmorCuirassColor = 0;
     ConfigVarHandle magicArmorAccessoriesColor = 0;
-    ConfigVarHandle magicArmorBeltColor = 0;
+    ConfigVarHandle magicArmorBaldricColor = 0;
     ConfigVarHandle magicArmorVambracesColor = 0;
     ConfigVarHandle magicArmorBootsColor = 0;
     ConfigVarHandle woodenSwordColor = 0;
     ConfigVarHandle ordonSwordBladeColor = 0;
     ConfigVarHandle ordonSwordHandleColor = 0;
-    ConfigVarHandle ordonSwordSheathColor = 0;
+    ConfigVarHandle ordonSwordScabbardColor = 0;
     ConfigVarHandle masterSwordBladeColor = 0;
     ConfigVarHandle masterSwordHandleColor = 0;
-    ConfigVarHandle masterSwordSheathColor = 0;
+    ConfigVarHandle masterSwordScabbardColor = 0;
     ConfigVarHandle lightSwordGlowColor = 0;
     ConfigVarHandle ordonShieldColor = 0;
     ConfigVarHandle woodenShieldColor = 0;
