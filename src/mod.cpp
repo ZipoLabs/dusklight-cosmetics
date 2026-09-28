@@ -241,21 +241,21 @@ void add_group(
 
 ModResult build_ordon_clothes_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
     svc_ui->pane_add_section(mod_ctx, pane, "Ordon Clothes");
-    add_cosmetic_option(pane, g_cvars.ordonClothesArmWrapsColor, "Arm Wraps and Top", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.ordonClothesTopColor, "Top and Arm Wraps", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.ordonClothesBeltColor, "Belt", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.ordonClothesBottomsColor, "Bottoms and Skirt", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.ordonClothesSkirtColor, "Skirt and Bottoms", kOverlayPresets);
     return MOD_OK;
 }
 
 ModResult build_hero_tunic_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
-    svc_ui->pane_add_section(mod_ctx, pane, "Hero's Tunic");
-    add_cosmetic_option(pane, g_cvars.herosTunicCapColor, "Cap", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.herosTunicBeltsColor, "Belts, Pouch and Undershirt", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.herosTunicChainMailColor, "Chain Mail", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.herosTunicTopColor, "Top", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.herosTunicSkirtColor, "Skirt", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.herosTunicBottomsColor, "Bottoms", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.herosTunicBootsColor, "Boots", kOverlayPresets);
+    svc_ui->pane_add_section(mod_ctx, pane, "Hero's Clothes");
+    add_cosmetic_option(pane, g_cvars.herosClothesCapColor, "Cap", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.herosClothesUndershirtColor, "Undershirt, Belts and Pouch", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.herosClothesChainMailColor, "Chain Mail", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.herosClothesTopColor, "Top", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.herosClothesSkirtColor, "Skirt", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.herosClothesBottomsColor, "Bottoms", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.herosClothesBootsColor, "Boots", kOverlayPresets);
     return MOD_OK;
 }
 
@@ -264,8 +264,8 @@ ModResult build_zora_armor_colors(ModContext*, UiElementHandle pane, void*, ModE
     add_cosmetic_option(pane, g_cvars.zoraArmorCapColor, "Cap", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorHelmetColor, "Helmet", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorMaskColor, "Mask", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.zoraArmorBottomsColor, "Bottoms and Scales", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.zoraArmorShouldersColor, "Shoulders and Skirt", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.zoraArmorScalesColor, "Scales, Armlets and Bottoms", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.zoraArmorPauldronsColor, "Pauldrons and Skirt", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorBeltColor, "Belt and Pouch", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.zoraArmorFlippersColor, "Flippers", kOverlayPresets);
     return MOD_OK;
@@ -276,10 +276,10 @@ ModResult build_magic_armor_colors(ModContext*, UiElementHandle pane, void*, Mod
     add_cosmetic_option(pane, g_cvars.magicArmorCapColor, "Cap", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorTiaraColor, "Tiara", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorChestplateColor, "Chestplate and Spaulders", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.magicArmorBottomsColor, "Bottoms and Chain Mail", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.magicArmorBeltColor, "Belt, Bracers and Pouch", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.magicArmorVambracesColor, "Vambraces", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorChainMailColor, "Chain Mail and Bottoms", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorBeltColor, "Belt, Pouch and Bracers", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorAccessoriesColor, "Accessories", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.magicArmorVambracesColor, "Vambraces", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.magicArmorBootsColor, "Boots", kOverlayPresets);
     return MOD_OK;
 }
@@ -290,9 +290,9 @@ ModResult build_sword_colors(ModContext*, UiElementHandle pane, void*, ModError*
     add_cosmetic_option(pane, g_cvars.ordonSwordBladeColor, "Ordon Sword Blade", kLightPresets);
     add_cosmetic_option(pane, g_cvars.ordonSwordHandleColor, "Ordon Sword Handle", kLightPresets);
     add_cosmetic_option(pane, g_cvars.ordonSwordSheathColor, "Ordon Sword Sheath", kLightPresets);
-    add_cosmetic_option(pane, g_cvars.msBladeColor, "Master Sword Blade", kLightPresets);
-    add_cosmetic_option(pane, g_cvars.msHandleColor, "Master Sword Handle", kLightPresets);
-    add_cosmetic_option(pane, g_cvars.msSheathColor, "Master Sword Sheath", kLightPresets);
+    add_cosmetic_option(pane, g_cvars.masterSwordBladeColor, "Master Sword Blade", kLightPresets);
+    add_cosmetic_option(pane, g_cvars.masterSwordHandleColor, "Master Sword Handle", kLightPresets);
+    add_cosmetic_option(pane, g_cvars.masterSwordSheathColor, "Master Sword Sheath", kLightPresets);
     add_cosmetic_option(pane, g_cvars.lightSwordGlowColor, "Light Sword Glow", kRainbowLightPresets);
     return MOD_OK;
 }
@@ -613,38 +613,38 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
 
     ModResult result{};
 
-    REGISTER_COSMETIC_OPTION(ordonClothesArmWrapsColor)
+    REGISTER_COSMETIC_OPTION(ordonClothesTopColor)
     REGISTER_COSMETIC_OPTION(ordonClothesBeltColor)
-    REGISTER_COSMETIC_OPTION(ordonClothesBottomsColor)
-    REGISTER_COSMETIC_OPTION(herosTunicCapColor)
-    REGISTER_COSMETIC_OPTION(herosTunicBeltsColor)
-    REGISTER_COSMETIC_OPTION(herosTunicChainMailColor)
-    REGISTER_COSMETIC_OPTION(herosTunicTopColor)
-    REGISTER_COSMETIC_OPTION(herosTunicSkirtColor)
-    REGISTER_COSMETIC_OPTION(herosTunicBottomsColor)
-    REGISTER_COSMETIC_OPTION(herosTunicBootsColor)
+    REGISTER_COSMETIC_OPTION(ordonClothesSkirtColor)
+    REGISTER_COSMETIC_OPTION(herosClothesCapColor)
+    REGISTER_COSMETIC_OPTION(herosClothesUndershirtColor)
+    REGISTER_COSMETIC_OPTION(herosClothesChainMailColor)
+    REGISTER_COSMETIC_OPTION(herosClothesTopColor)
+    REGISTER_COSMETIC_OPTION(herosClothesSkirtColor)
+    REGISTER_COSMETIC_OPTION(herosClothesBottomsColor)
+    REGISTER_COSMETIC_OPTION(herosClothesBootsColor)
     REGISTER_COSMETIC_OPTION(zoraArmorCapColor)
     REGISTER_COSMETIC_OPTION(zoraArmorHelmetColor)
     REGISTER_COSMETIC_OPTION(zoraArmorMaskColor)
-    REGISTER_COSMETIC_OPTION(zoraArmorBottomsColor)
-    REGISTER_COSMETIC_OPTION(zoraArmorShouldersColor)
+    REGISTER_COSMETIC_OPTION(zoraArmorScalesColor)
+    REGISTER_COSMETIC_OPTION(zoraArmorPauldronsColor)
     REGISTER_COSMETIC_OPTION(zoraArmorBeltColor)
     REGISTER_COSMETIC_OPTION(zoraArmorFlippersColor)
     REGISTER_COSMETIC_OPTION(magicArmorCapColor)
     REGISTER_COSMETIC_OPTION(magicArmorTiaraColor)
     REGISTER_COSMETIC_OPTION(magicArmorChestplateColor)
-    REGISTER_COSMETIC_OPTION(magicArmorBottomsColor)
+    REGISTER_COSMETIC_OPTION(magicArmorChainMailColor)
     REGISTER_COSMETIC_OPTION(magicArmorBeltColor)
-    REGISTER_COSMETIC_OPTION(magicArmorVambracesColor)
     REGISTER_COSMETIC_OPTION(magicArmorAccessoriesColor)
+    REGISTER_COSMETIC_OPTION(magicArmorVambracesColor)
     REGISTER_COSMETIC_OPTION(magicArmorBootsColor)
     REGISTER_COSMETIC_OPTION(woodenSwordColor)
     REGISTER_COSMETIC_OPTION(ordonSwordBladeColor)
     REGISTER_COSMETIC_OPTION(ordonSwordHandleColor)
     REGISTER_COSMETIC_OPTION(ordonSwordSheathColor)
-    REGISTER_COSMETIC_OPTION(msBladeColor)
-    REGISTER_COSMETIC_OPTION(msHandleColor)
-    REGISTER_COSMETIC_OPTION(msSheathColor)
+    REGISTER_COSMETIC_OPTION(masterSwordBladeColor)
+    REGISTER_COSMETIC_OPTION(masterSwordHandleColor)
+    REGISTER_COSMETIC_OPTION(masterSwordSheathColor)
     REGISTER_COSMETIC_OPTION(lightSwordGlowColor)
     REGISTER_COSMETIC_OPTION(ordonShieldColor)
     REGISTER_COSMETIC_OPTION(woodenShieldColor)

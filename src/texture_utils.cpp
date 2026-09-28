@@ -422,310 +422,310 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
 
     if (replacements.empty()) {
         replacements = {
-            {get_cvars().ordonClothesArmWrapsColor, {
+            {get_cvars().ordonClothesTopColor, {
                 {
-                    .arc = "Bmdl",
+                    .arc = "Bmdl", // Ordon Clothes top and arm wraps worn by Link
                     .modelFileName = "bl.bmd",
                     .textureName = "bl_upbody",
                 }
             }},
             {get_cvars().ordonClothesBeltColor, {
                 {
-                    .arc = "Bmdl",
+                    .arc = "Bmdl", // Ordon Clothes belt worn by Link
                     .modelFileName = "bl.bmd",
                     .textureName = "al_belt",
                 }
             }},
-            {get_cvars().ordonClothesBottomsColor, {
+            {get_cvars().ordonClothesSkirtColor, {
                 {
-                    .arc = "Bmdl",
+                    .arc = "Bmdl", // Ordon Clothes skirt and bottoms worn by Link
                     .modelFileName = "bl.bmd",
                     .textureName = "bl_lowbody",
                 }
             }},
-            {get_cvars().herosTunicCapColor, {
+            {get_cvars().herosClothesCapColor, {
                 {
-                    .arc = "Kmdl",
+                    .arc = "Kmdl", // Hero's Clothes cap worn by Link
                     .modelFileName = "al_head.bmd",
                     .textureName = "al_cap",
                 }
             }},
-            {get_cvars().herosTunicBeltsColor, {
+            {get_cvars().herosClothesUndershirtColor, {
                 {
-                    .arc = "Kmdl",
+                    .arc = "Kmdl", // Hero's Clothes undershirt, belts and pouch worn by Link
                     .modelFileName = "al.bmd",
                     .textureName = "al_belts",
                 }
             }},
-            {get_cvars().herosTunicChainMailColor, {
+            {get_cvars().herosClothesChainMailColor, {
                 {
-                    .arc = "Kmdl",
+                    .arc = "Kmdl", // Hero's Clothes chain mail worn by Link
                     .modelFileName = "al.bmd",
                     .textureName = "al_inner",
                 }
             }},
-            {get_cvars().herosTunicTopColor, {
+            {get_cvars().herosClothesTopColor, {
                 {
-                    .arc = "Kmdl",
+                    .arc = "Kmdl", // Hero's Clothes top worn by Link
                     .modelFileName = "al.bmd",
                     .textureName = "al_upbody",
                 }
             }},
-            {get_cvars().herosTunicSkirtColor, {
+            {get_cvars().herosClothesSkirtColor, {
                 {
-                    .arc = "Kmdl",
+                    .arc = "Kmdl", // Hero's Clothes skirt worn by Link
                     .modelFileName = "al.bmd",
                     .textureName = "al_lowbody",
                 }
             }},
-            {get_cvars().herosTunicBottomsColor, {
+            {get_cvars().herosClothesBottomsColor, {
                 {
-                    .arc = "Kmdl",
+                    .arc = "Kmdl", // Hero's Clothes bottoms worn by Link
                     .modelFileName = "al.bmd",
                     .textureName = "al_pants",
                 }
             }},
-            {get_cvars().herosTunicBootsColor, {
+            {get_cvars().herosClothesBootsColor, {
                 {
-                    .arc = "Kmdl",
+                    .arc = "Kmdl", // Hero's Clothes boots worn by Link
                     .modelFileName = "al.bmd",
                     .textureName = "al_boots",
                 }
             }},
             {get_cvars().zoraArmorCapColor, {
                 {
-                    .arc = "Zmdl",
+                    .arc = "Zmdl", // Zora Armor cap worn by Link
                     .modelFileName = "zl_head.bmd",
                     .textureName = "zl_cap",
                 },
                 {
-                    .arc = "O_gD_zora",
+                    .arc = "O_gD_zora", // Get Item model
                     .modelFileName = "o_gd_al_zora.bmd",
                     .textureName = "zl_cap",
                 }
             }},
             {get_cvars().zoraArmorHelmetColor, {
                 {
-                    .arc = "Zmdl",
+                    .arc = "Zmdl", // Zora Armor helmet worn by Link
                     .modelFileName = "zl_head.bmd",
                     .textureName = "zl_helmet",
                 },
                 {
-                    .arc = "O_gD_zora",
+                    .arc = "O_gD_zora", // Get Item model
                     .modelFileName = "o_gd_al_zora.bmd",
                     .textureName = "zl_helmet",
                 }
             }},
             {get_cvars().zoraArmorMaskColor, {
                 {
-                    .arc = "Zmdl",
+                    .arc = "Zmdl", // Zora Armor mask worn by Link
                     .modelFileName = "zl.bmd",
                     .textureName = "zl_mask",
                 },
                 {
-                    .arc = "O_gD_zora",
+                    .arc = "O_gD_zora", // Get Item model
                     .modelFileName = "o_gd_al_zora.bmd",
                     .textureName = "zl_mask",
                 }
             }},
-            {get_cvars().zoraArmorBottomsColor, {
+            {get_cvars().zoraArmorScalesColor, {
                 {
-                    .arc = "Zmdl",
+                    .arc = "Zmdl", // Zora Armor scales, armlets and bottoms worn by Link
                     .modelFileName = "zl.bmd",
                     .textureName = "zl_body",
                 },
                 {
-                    .arc = "O_gD_zora",
+                    .arc = "O_gD_zora", // Get Item model
                     .modelFileName = "o_gd_al_zora.bmd",
                     .textureName = "zl_body",
                 }
             }},
-            {get_cvars().zoraArmorShouldersColor, {
+            {get_cvars().zoraArmorPauldronsColor, {
                 {
-                    .arc = "Zmdl",
+                    .arc = "Zmdl", // Zora Armor pauldrons and skirt worn by Link
                     .modelFileName = "zl.bmd",
                     .textureName = "zl_armor",
                 },
                 {
-                    .arc = "O_gD_zora",
+                    .arc = "O_gD_zora", // Get Item model
                     .modelFileName = "o_gd_al_zora.bmd",
                     .textureName = "zl_body",
                 }
             }},
             {get_cvars().zoraArmorBeltColor, {
                 {
-                    .arc = "Zmdl",
+                    .arc = "Zmdl", // Zora Armor belt and pouch worn by Link
                     .modelFileName = "zl.bmd",
                     .textureName = "al_belt",
                 }
             }},
             {get_cvars().zoraArmorFlippersColor, {
                 {
-                    .arc = "Zmdl",
+                    .arc = "Zmdl", // Zora Armor flippers worn by Link
                     .modelFileName = "zl.bmd",
                     .textureName = "zl_boots",
                 }
             }},
             {get_cvars().magicArmorCapColor, {
                 {
-                    .arc = "Mmdl",
+                    .arc = "Mmdl", // Magic Armor cap worn by Link
                     .modelFileName = "ml_head.bmd",
                     .textureName = "ml_cap",
                 },
                 {
-                    .arc = "O_mD_marm",
+                    .arc = "O_mD_marm", // Shop model
                     .modelFileName = "o_md_marmor.bmd",
                     .textureName = "ml_cap"
                 }
             }},
             {get_cvars().magicArmorTiaraColor, {
                 {
-                    .arc = "Mmdl",
+                    .arc = "Mmdl", // Magic Armor tiara worn by Link
                     .modelFileName = "ml_head.bmd",
                     .textureName = "ml_tiara",
                 },
                 {
-                    .arc = "O_gD_marm",
+                    .arc = "O_gD_marm", // Get Item model
                     .modelFileName = "o_gd_al_marmor.bmd",
                     .textureName = "ml_tiara"
                 },
                 {
-                    .arc = "O_mD_marm",
+                    .arc = "O_mD_marm", // Shop model
                     .modelFileName = "o_md_marmor.bmd",
                     .textureName = "ml_tiara"
                 }
             }},
             {get_cvars().magicArmorChestplateColor, {
                 {
-                    .arc = "Mmdl",
+                    .arc = "Mmdl", // Magic Armor chest plate and spaulders worn by Link
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_armor",
                 },
                 {
-                    .arc = "O_gD_marm",
+                    .arc = "O_gD_marm", // Get Item model
                     .modelFileName = "o_gd_al_marmor.bmd",
                     .textureName = "ml_armor"
                 },
                 {
-                    .arc = "O_mD_marm",
+                    .arc = "O_mD_marm", // Shop model
                     .modelFileName = "o_md_marmor.bmd",
                     .textureName = "ml_armor"
                 }
             }},
-            {get_cvars().magicArmorBottomsColor, {
+            {get_cvars().magicArmorChainMailColor, {
                 {
-                    .arc = "Mmdl",
+                    .arc = "Mmdl", // Magic Armor chain mail and bottoms worn by Link
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_body",
                 },
                 {
-                    .arc = "O_gD_marm",
+                    .arc = "O_gD_marm", // Get Item model
                     .modelFileName = "o_gd_al_marmor.bmd",
                     .textureName = "ml_body"
                 },
                 {
-                    .arc = "O_mD_marm",
+                    .arc = "O_mD_marm", // Shop model
                     .modelFileName = "o_md_marmor.bmd",
                     .textureName = "ml_body"
                 }
             }},
             { get_cvars().magicArmorBeltColor, {
                 {
-                    .arc = "Mmdl",
+                    .arc = "Mmdl", // Magic Armor belt, pouch and bracers worn by Link
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_belts",
                 },
                 {
-                    .arc = "O_mD_marm",
+                    .arc = "O_mD_marm", // Shop model
                     .modelFileName = "o_md_marmor.bmd",
                     .textureName = "ml_belts"
                 }
             }},
-            {get_cvars().magicArmorVambracesColor, {
+            {get_cvars().magicArmorAccessoriesColor, {
                 {
-                    .arc = "Mmdl",
-                    .modelFileName = "ml.bmd",
-                    .textureName = "ml_gauntlet",
-                },
-                {
-                    .arc = "O_mD_marm",
-                    .modelFileName = "o_md_marmor.bmd",
-                    .textureName = "ml_gauntlet"
-                }
-            }},
-            { get_cvars().magicArmorAccessoriesColor, {
-                {
-                    .arc = "Mmdl",
+                    .arc = "Mmdl", // Magic Armor accessories worn by Link
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_accessory",
                 },
                 {
-                    .arc = "O_gD_marm",
+                    .arc = "O_gD_marm", // Get Item model
                     .modelFileName = "o_gd_al_marmor.bmd",
                     .textureName = "ml_accessory"
                 },
                 {
-                    .arc = "O_mD_marm",
+                    .arc = "O_mD_marm", // Shop model
                     .modelFileName = "o_md_marmor.bmd",
                     .textureName = "ml_accessory"
                 }
             }},
+            {get_cvars().magicArmorVambracesColor, {
+                {
+                    .arc = "Mmdl", // Magic Armor vambraces worn by Link
+                    .modelFileName = "ml.bmd",
+                    .textureName = "ml_gauntlet",
+                },
+                {
+                    .arc = "O_mD_marm", // Shop model
+                    .modelFileName = "o_md_marmor.bmd",
+                    .textureName = "ml_gauntlet"
+                }
+            }},
             {get_cvars().magicArmorBootsColor, {
                 {
-                    .arc = "Mmdl",
+                    .arc = "Mmdl", // Magic Armor boots worn by Link
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_boots",
                 }
             }},
             {get_cvars().woodenSwordColor, {
                 {
-                    .arc = "Bmdl", // Ordon Clothes Model
+                    .arc = "Bmdl", // Ordon Clothes model
                     .modelFileName = "al_swb.bmd",
                     .textureName = "al_SWB",
                 },
                 {
-                    .arc = "Kmdl", // Hero's Tunic Model
+                    .arc = "Kmdl", // Hero's Clothes model
                     .modelFileName = "al_swb.bmd",
                     .textureName = "al_SWB",
                 },
                 {
-                    .arc = "Zmdl", // Zora Armor Model
+                    .arc = "Zmdl", // Zora Armor model
                     .modelFileName = "al_swb.bmd",
                     .textureName = "al_SWB",
                 },
                 {
-                    .arc = "Mmdl", // Magic Armor Model
+                    .arc = "Mmdl", // Magic Armor model
                     .modelFileName = "al_swb.bmd",
                     .textureName = "al_SWB",
                 },
                 {
-                    .arc = "O_gD_SWB", // Get Item Model
+                    .arc = "O_gD_SWB", // Get Item model
                     .modelFileName = "o_gd_al_swb.bmd",
                     .textureName = "al_SWB",
                 }
             }},
             {get_cvars().ordonSwordBladeColor, {
                 {
-                    .arc = "Alink",
+                    .arc = "Alink", // Ordon Sword blade used by Link
                     .modelFileName = "al_swa.bmd",
                     .textureName = "al_SWA",
                 }
             }},
             {get_cvars().ordonSwordHandleColor, {
                 {
-                    .arc = "Alink",
+                    .arc = "Alink", // Ordon Sword handle used by Link
                     .modelFileName = "al_swa.bmd",
                     .textureName = "al_SWgripA",
                 },
                 {
-                    .arc = "O_gD_SWA", // Get Item Model
+                    .arc = "O_gD_SWA", // Get Item model
                     .modelFileName = "o_gd_al_swa.bmd",
                     .textureName = "al_SWgripA",
                 }
             }},
             {get_cvars().ordonSwordSheathColor, {
                 {
-                    .arc = "Alink", // Ordon Sword sheath used by Link
+                    .arc = "Alink", // Ordon Sword sheath worn by Link
                     .modelFileName = "al_poda.bmd",
                     .textureName = "al_podA",
                 },
@@ -735,23 +735,23 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "al_podA",
                 }
             }},
-            {get_cvars().msBladeColor, {
+            {get_cvars().masterSwordBladeColor, {
                 {
-                    .arc = "Alink",
+                    .arc = "Alink", // Master Sword blade used by Link
                     .modelFileName = "al_swm.bmd",
                     .textureName = "al_SWM",
                 }
             }},
-            {get_cvars().msHandleColor, {
+            {get_cvars().masterSwordHandleColor, {
                 {
-                    .arc = "Alink",
+                    .arc = "Alink", // Master Sword handle used by Link
                     .modelFileName = "al_swm.bmd",
                     .textureName = "al_SWgripM",
                 }
             }},
-            {get_cvars().msSheathColor, {
+            {get_cvars().masterSwordSheathColor, {
                 {
-                    .arc = "Alink",
+                    .arc = "Alink", // Master Sword sheath worn by Link
                     .modelFileName = "al_podm.bmd",
                     .textureName = "al_podM"
                 }
@@ -768,7 +768,7 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "al_SHB",
                 },
                 {
-                    .arc = "T_gD_SHB", // Get Item model used by Wolf Link
+                    .arc = "T_gD_SHB", // Get Item model
                     .modelFileName = "t_g_shb.bmd",
                     .textureName = "al_SHB"
                 }
@@ -814,7 +814,7 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "bl_kt",
                 },
                 {
-                    .arc = "Kmdl", // Hero's Tunic model
+                    .arc = "Kmdl", // Hero's Clothes model
                     .modelFileName = "al_kantera.bmd",
                     .textureName = "al_kt",
                 },
@@ -841,49 +841,49 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
             }},
             {get_cvars().galeBoomerangColor, {
                 {
-                    .arc = "Alink", // Boomerang in Link's hand
+                    .arc = "Alink", // Gale Boomerang used by Link
                     .modelFileName = "al_boom.bmd",
                     .textureName = "L_al_boom00",
                 },
                 {
-                    .arc = "E_mk", // Boomerang in Ook's hand
+                    .arc = "E_mk", // Gale Boomerang used by Ook
                     .modelFileName = "bm.bmd",
                     .textureName = "L_al_boom00",
                 },
                 {
-                    .arc = "E_mk", // Boomerang in Ook's hand
+                    .arc = "E_mk", // Gale Boomerang used by Ook
                     .modelFileName = "bm.bmd",
                     .textureName = "bm_boom",
                 },
                 {
-                    .arc = "O_gD_boom", // Get Item Model
+                    .arc = "O_gD_boom", // Get Item model
                     .modelFileName = "o_gd_boom.bmd",
                     .textureName = "L_al_boom00",
                 }
             }},
             {get_cvars().ironBootsColor, {
                 {
-                    .arc = "Bmdl", // Ordon Clothes Model
+                    .arc = "Bmdl", // Ordon Clothes model
                     .modelFileName = "al_bootsh.bmd",
                     .textureName = "al_bootsH",
                 },
                 {
-                    .arc = "Kmdl", // Hero's Tunic Model
+                    .arc = "Kmdl", // Hero's Clothes model
                     .modelFileName = "al_bootsh.bmd",
                     .textureName = "al_bootsH",
                 },
                 {
-                    .arc = "Zmdl", // Zora Armor Model
+                    .arc = "Zmdl", // Zora Armor model
                     .modelFileName = "al_bootsh.bmd",
                     .textureName = "al_bootsH",
                 },
                 {
-                    .arc = "Mmdl", // Magic Armor Model
+                    .arc = "Mmdl", // Magic Armor model
                     .modelFileName = "al_bootsh.bmd",
                     .textureName = "al_bootsH",
                 },
                 {
-                    .arc = "O_gD_boot", // Get Item Model
+                    .arc = "O_gD_boot", // Get Item model
                     .modelFileName = "o_gd_al_bootsh.bmd",
                     .textureName = "al_bootsH",
                 }
@@ -929,7 +929,7 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "al_SP",
                 },
                 {
-                    .arc = "O_gD_SP", // Get Item Model
+                    .arc = "O_gD_SP", // Get Item model
                     .modelFileName = "o_gd_al_sp.bmd",
                     .textureName = "al_SP",
                 }
@@ -953,58 +953,58 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
             }},
             {get_cvars().linkHairColor, {
                 {
-                    .arc = "Bmdl", // Ordon Clothes Model
+                    .arc = "Bmdl", // Ordon Clothes model
                     .modelFileName = "bl_head.bmd",
                     .textureName = "bl_hair",
                 },
                 {
-                    .arc = "Kmdl", // Hero's Tunic Model
+                    .arc = "Kmdl", // Hero's Clothes model
                     .modelFileName = "al_head.bmd",
                     .textureName = "al_hair",
                 },
                 {
-                    .arc = "Mmdl", // Magic Armor Model
+                    .arc = "Mmdl", // Magic Armor model
                     .modelFileName = "ml_head.bmd",
                     .textureName = "al_hair",
                 }
             }},
             {get_cvars().linkEarringsColor, {
                 {
-                    .arc = "Bmdl", // Ordon Clothes Model
+                    .arc = "Bmdl", // Ordon Clothes model
                     .modelFileName = "bl.bmd",
                     .textureName = "t_earring_S3TC_test",
                 },
                 {
-                    .arc = "Kmdl", // Hero's Tunic Model
+                    .arc = "Kmdl", // Hero's Clothes model
                     .modelFileName = "al.bmd",
                     .textureName = "t_earring_S3TC_test",
                 },
                 {
-                    .arc = "Mmdl", // Magic Armor Model
+                    .arc = "Mmdl", // Magic Armor model
                     .modelFileName = "ml.bmd",
                     .textureName = "t_earring_S3TC_test",
                 }
             }},
             {get_cvars().linkBracersColor, {
                 {
-                    .arc = "Kmdl", // Hero's Tunic Model
+                    .arc = "Kmdl", // Hero's Clothes model
                     .modelFileName = "al.bmd",
                     .textureName = "al_armL",
                 },
                 {
-                    .arc = "Mmdl", // Magic Armor Model
+                    .arc = "Mmdl", // Magic Armor model
                     .modelFileName = "ml.bmd",
                     .textureName = "al_armL",
                 }
             }},
             {get_cvars().linkVambraceColor, {
                 {
-                    .arc = "Kmdl", // Hero's Tunic Model
+                    .arc = "Kmdl", // Hero's Clothes model
                     .modelFileName = "al.bmd",
                     .textureName = "al_gauntletL",
                 },
                 {
-                    .arc = "Mmdl", // Magic Armor Model
+                    .arc = "Mmdl", // Magic Armor model
                     .modelFileName = "ml.bmd",
                     .textureName = "al_gauntletL",
                 }
