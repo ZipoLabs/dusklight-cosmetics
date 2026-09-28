@@ -287,21 +287,34 @@ ModResult build_magic_armor_colors(ModContext*, UiElementHandle pane, void*, Mod
 ModResult build_sword_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
     svc_ui->pane_add_section(mod_ctx, pane, "Swords");
     add_cosmetic_option(pane, g_cvars.woodenSwordColor, "Wooden Sword", kOverlayPresets);
-    add_cosmetic_option(pane, g_cvars.ordonSwordBladeColor, "Ordon Blade", kLightPresets);
-    add_cosmetic_option(pane, g_cvars.ordonSwordHandleColor, "Ordon Handle", kLightPresets);
+    add_cosmetic_option(pane, g_cvars.ordonSwordBladeColor, "Ordon Sword Blade", kLightPresets);
+    add_cosmetic_option(pane, g_cvars.ordonSwordHandleColor, "Ordon Sword Handle", kLightPresets);
+    add_cosmetic_option(pane, g_cvars.ordonSwordSheathColor, "Ordon Sword Sheath", kLightPresets);
     add_cosmetic_option(pane, g_cvars.msBladeColor, "Master Sword Blade", kLightPresets);
     add_cosmetic_option(pane, g_cvars.msHandleColor, "Master Sword Handle", kLightPresets);
-    add_cosmetic_option(
-        pane, g_cvars.lightSwordGlowColor, "Light Sword Glow", kRainbowLightPresets);
+    add_cosmetic_option(pane, g_cvars.msSheathColor, "Master Sword Sheath", kLightPresets);
+    add_cosmetic_option(pane, g_cvars.lightSwordGlowColor, "Light Sword Glow", kRainbowLightPresets);
+    return MOD_OK;
+}
+
+ModResult build_shield_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
+    svc_ui->pane_add_section(mod_ctx, pane, "Shields");
+    add_cosmetic_option(pane, g_cvars.ordonShieldColor, "Ordon Shield", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.woodenShieldColor, "Wooden Shield", kLightPresets);
+    add_cosmetic_option(pane, g_cvars.hylianShieldColor, "Hylian Shield", kLightPresets);
     return MOD_OK;
 }
 
 ModResult build_equipment_colors(ModContext*, UiElementHandle pane, void*, ModError*) {
     svc_ui->pane_add_section(mod_ctx, pane, "Equipment");
+    add_cosmetic_option(pane, g_cvars.lanternColor, "Lantern", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.lanternGlowColor, "Lantern Glow", kRainbowLightPresets);
-    add_cosmetic_option(pane, g_cvars.boomerangColor, "Gale Boomerang", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.galeBoomerangColor, "Gale Boomerang", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.ironBootsColor, "Iron Boots", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.bombsColor, "Bombs", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.waterBombsColor, "Water Bombs", kOverlayPresets);
     add_cosmetic_option(pane, g_cvars.spinnerColor, "Spinner", kOverlayPresets);
+    add_cosmetic_option(pane, g_cvars.bomblingsColor, "Bomblings", kOverlayPresets);
     return MOD_OK;
 }
 
@@ -351,6 +364,7 @@ ModResult build_equipment_colors_tab(
     add_group(left, right, "Zora Armor", build_zora_armor_colors);
     add_group(left, right, "Magic Armor", build_magic_armor_colors);
     add_group(left, right, "Swords", build_sword_colors);
+    add_group(left, right, "Shields", build_shield_colors);
     add_group(left, right, "Equipment", build_equipment_colors);
 
     return MOD_OK;
@@ -624,16 +638,25 @@ MOD_EXPORT ModResult mod_initialize(ModError* error) {
     REGISTER_COSMETIC_OPTION(magicArmorVambracesColor)
     REGISTER_COSMETIC_OPTION(magicArmorAccessoriesColor)
     REGISTER_COSMETIC_OPTION(magicArmorBootsColor)
-    REGISTER_COSMETIC_OPTION(lanternGlowColor)
     REGISTER_COSMETIC_OPTION(woodenSwordColor)
     REGISTER_COSMETIC_OPTION(ordonSwordBladeColor)
     REGISTER_COSMETIC_OPTION(ordonSwordHandleColor)
+    REGISTER_COSMETIC_OPTION(ordonSwordSheathColor)
     REGISTER_COSMETIC_OPTION(msBladeColor)
     REGISTER_COSMETIC_OPTION(msHandleColor)
+    REGISTER_COSMETIC_OPTION(msSheathColor)
     REGISTER_COSMETIC_OPTION(lightSwordGlowColor)
-    REGISTER_COSMETIC_OPTION(boomerangColor)
+    REGISTER_COSMETIC_OPTION(ordonShieldColor)
+    REGISTER_COSMETIC_OPTION(woodenShieldColor)
+    REGISTER_COSMETIC_OPTION(hylianShieldColor)
+    REGISTER_COSMETIC_OPTION(lanternColor)
+    REGISTER_COSMETIC_OPTION(lanternGlowColor)
+    REGISTER_COSMETIC_OPTION(galeBoomerangColor)
     REGISTER_COSMETIC_OPTION(ironBootsColor)
+    REGISTER_COSMETIC_OPTION(bombsColor)
+    REGISTER_COSMETIC_OPTION(waterBombsColor)
     REGISTER_COSMETIC_OPTION(spinnerColor)
+    REGISTER_COSMETIC_OPTION(bomblingsColor)
     REGISTER_COSMETIC_OPTION(aButtonColor)
     REGISTER_COSMETIC_OPTION(bButtonColor)
     REGISTER_COSMETIC_OPTION(xButtonColor)

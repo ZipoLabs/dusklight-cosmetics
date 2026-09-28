@@ -497,12 +497,22 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "Zmdl",
                     .modelFileName = "zl_head.bmd",
                     .textureName = "zl_cap",
+                },
+                {
+                    .arc = "O_gD_zora",
+                    .modelFileName = "o_gd_al_zora.bmd",
+                    .textureName = "zl_cap",
                 }
             }},
             {get_cvars().zoraArmorHelmetColor, {
                 {
                     .arc = "Zmdl",
                     .modelFileName = "zl_head.bmd",
+                    .textureName = "zl_helmet",
+                },
+                {
+                    .arc = "O_gD_zora",
+                    .modelFileName = "o_gd_al_zora.bmd",
                     .textureName = "zl_helmet",
                 }
             }},
@@ -511,12 +521,22 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "Zmdl",
                     .modelFileName = "zl.bmd",
                     .textureName = "zl_mask",
+                },
+                {
+                    .arc = "O_gD_zora",
+                    .modelFileName = "o_gd_al_zora.bmd",
+                    .textureName = "zl_mask",
                 }
             }},
             {get_cvars().zoraArmorBottomsColor, {
                 {
                     .arc = "Zmdl",
                     .modelFileName = "zl.bmd",
+                    .textureName = "zl_body",
+                },
+                {
+                    .arc = "O_gD_zora",
+                    .modelFileName = "o_gd_al_zora.bmd",
                     .textureName = "zl_body",
                 }
             }},
@@ -527,9 +547,9 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "zl_armor",
                 },
                 {
-                    .arc = "Zmdl",
-                    .modelFileName = "zl.bmd",
-                    .textureName = "zl_armL",
+                    .arc = "O_gD_zora",
+                    .modelFileName = "o_gd_al_zora.bmd",
+                    .textureName = "zl_body",
                 }
             }},
             {get_cvars().zoraArmorBeltColor, {
@@ -551,6 +571,11 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "Mmdl",
                     .modelFileName = "ml_head.bmd",
                     .textureName = "ml_cap",
+                },
+                {
+                    .arc = "O_mD_marm",
+                    .modelFileName = "o_md_marmor.bmd",
+                    .textureName = "ml_cap"
                 }
             }},
             {get_cvars().magicArmorTiaraColor, {
@@ -558,6 +583,16 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "Mmdl",
                     .modelFileName = "ml_head.bmd",
                     .textureName = "ml_tiara",
+                },
+                {
+                    .arc = "O_gD_marm",
+                    .modelFileName = "o_gd_al_marmor.bmd",
+                    .textureName = "ml_tiara"
+                },
+                {
+                    .arc = "O_mD_marm",
+                    .modelFileName = "o_md_marmor.bmd",
+                    .textureName = "ml_tiara"
                 }
             }},
             {get_cvars().magicArmorChestplateColor, {
@@ -565,6 +600,16 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "Mmdl",
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_armor",
+                },
+                {
+                    .arc = "O_gD_marm",
+                    .modelFileName = "o_gd_al_marmor.bmd",
+                    .textureName = "ml_armor"
+                },
+                {
+                    .arc = "O_mD_marm",
+                    .modelFileName = "o_md_marmor.bmd",
+                    .textureName = "ml_armor"
                 }
             }},
             {get_cvars().magicArmorBottomsColor, {
@@ -572,6 +617,16 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "Mmdl",
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_body",
+                },
+                {
+                    .arc = "O_gD_marm",
+                    .modelFileName = "o_gd_al_marmor.bmd",
+                    .textureName = "ml_body"
+                },
+                {
+                    .arc = "O_mD_marm",
+                    .modelFileName = "o_md_marmor.bmd",
+                    .textureName = "ml_body"
                 }
             }},
             { get_cvars().magicArmorBeltColor, {
@@ -579,13 +634,23 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "Mmdl",
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_belts",
+                },
+                {
+                    .arc = "O_mD_marm",
+                    .modelFileName = "o_md_marmor.bmd",
+                    .textureName = "ml_belts"
                 }
-            } },
+            }},
             {get_cvars().magicArmorVambracesColor, {
                 {
                     .arc = "Mmdl",
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_gauntlet",
+                },
+                {
+                    .arc = "O_mD_marm",
+                    .modelFileName = "o_md_marmor.bmd",
+                    .textureName = "ml_gauntlet"
                 }
             }},
             { get_cvars().magicArmorAccessoriesColor, {
@@ -593,8 +658,18 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "Mmdl",
                     .modelFileName = "ml.bmd",
                     .textureName = "ml_accessory",
+                },
+                {
+                    .arc = "O_gD_marm",
+                    .modelFileName = "o_gd_al_marmor.bmd",
+                    .textureName = "ml_accessory"
+                },
+                {
+                    .arc = "O_mD_marm",
+                    .modelFileName = "o_md_marmor.bmd",
+                    .textureName = "ml_accessory"
                 }
-            } },
+            }},
             {get_cvars().magicArmorBootsColor, {
                 {
                     .arc = "Mmdl",
@@ -629,6 +704,13 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "al_SWB",
                 }
             }},
+            {get_cvars().ordonSwordBladeColor, {
+                {
+                    .arc = "Alink",
+                    .modelFileName = "al_swa.bmd",
+                    .textureName = "al_SWA",
+                }
+            }},
             {get_cvars().ordonSwordHandleColor, {
                 {
                     .arc = "Alink",
@@ -641,18 +723,16 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "al_SWgripA",
                 }
             }},
-            {get_cvars().ordonSwordBladeColor, {
+            {get_cvars().ordonSwordSheathColor, {
                 {
-                    .arc = "Alink",
-                    .modelFileName = "al_swa.bmd",
-                    .textureName = "al_SWA",
-                }
-            }},
-            {get_cvars().msHandleColor, {
+                    .arc = "Alink", // Ordon Sword sheath used by Link
+                    .modelFileName = "al_poda.bmd",
+                    .textureName = "al_podA",
+                },
                 {
-                    .arc = "Alink",
-                    .modelFileName = "al_swm.bmd",
-                    .textureName = "al_SWgripM",
+                    .arc = "O_gD_SWA", // Get Item model
+                    .modelFileName = "o_gd_al_swa.bmd",
+                    .textureName = "al_podA",
                 }
             }},
             {get_cvars().msBladeColor, {
@@ -662,7 +742,104 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "al_SWM",
                 }
             }},
-            {get_cvars().boomerangColor, {
+            {get_cvars().msHandleColor, {
+                {
+                    .arc = "Alink",
+                    .modelFileName = "al_swm.bmd",
+                    .textureName = "al_SWgripM",
+                }
+            }},
+            {get_cvars().msSheathColor, {
+                {
+                    .arc = "Alink",
+                    .modelFileName = "al_podm.bmd",
+                    .textureName = "al_podM"
+                }
+            }},
+            {get_cvars().ordonShieldColor, {
+                {
+                    .arc = "CWShd", // Ordon Shield used by Link
+                    .modelFileName = "al_shb.bmd",
+                    .textureName = "al_SHB",
+                },
+                {
+                    .arc = "T_g_SHB", // Drop Item model
+                    .modelFileName = "t_g_shb.bmd",
+                    .textureName = "al_SHB",
+                },
+                {
+                    .arc = "T_gD_SHB", // Get Item model used by Wolf Link
+                    .modelFileName = "t_g_shb.bmd",
+                    .textureName = "al_SHB"
+                }
+            }},
+            {get_cvars().woodenShieldColor, {
+                {
+                    .arc = "SWShd", // Wooden Shield used by Link
+                    .modelFileName = "al_shc.bmd",
+                    .textureName = "al_SHC",
+                },
+                {
+                    .arc = "O_gD_SHC", // Get Item model
+                    .modelFileName = "o_gd_shc.bmd",
+                    .textureName = "al_SHC",
+                },
+                {
+                    .arc = "O_mD_SHB", // Shop model
+                    .modelFileName = "o_md_shb.bmd",
+                    .textureName = "al_SHC",
+                }
+            }},
+            {get_cvars().hylianShieldColor, {
+                {
+                    .arc = "HyShd", // Hylian Shield used by Link
+                    .modelFileName = "al_sha.bmd",
+                    .textureName = "al_SHA",
+                },
+                {
+                    .arc = "O_gD_SHA", // Get Item model
+                    .modelFileName = "o_gd_sha.bmd",
+                    .textureName = "al_SHA",
+                },
+                {
+                    .arc = "O_mD_SHA", // Shop model
+                    .modelFileName = "o_md_al_sha.bmd",
+                    .textureName = "al_SHA",
+                }
+            }},
+            {get_cvars().lanternColor, {
+                {
+                    .arc = "Bmdl", // Ordon Clothes model
+                    .modelFileName = "al_kantera.bmd",
+                    .textureName = "bl_kt",
+                },
+                {
+                    .arc = "Kmdl", // Hero's Tunic model
+                    .modelFileName = "al_kantera.bmd",
+                    .textureName = "al_kt",
+                },
+                {
+                    .arc = "Zmdl", // Magic Armor model
+                    .modelFileName = "ml_kantera.bmd",
+                    .textureName = "al_kt",
+                },
+                {
+                    .arc = "Mmdl", // Magic Armor model
+                    .modelFileName = "ml_kantera.bmd",
+                    .textureName = "al_kt",
+                },
+                {
+                    .arc = "T_gD_kt", // Get Item model
+                    .modelFileName = "t_gd_kt.bmd",
+                    .textureName = "al_kt",
+                },
+                {
+                    .arc = "T_g_kt", // Drop Item model
+                    .modelFileName = "t_g_kt.bmd",
+                    .textureName = "al_kt"
+                }
+            }},
+            {get_cvars().galeBoomerangColor, {
                 {
                     .arc = "Alink", // Boomerang in Link's hand
                     .modelFileName = "al_boom.bmd",
@@ -711,6 +888,40 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .textureName = "al_bootsH",
                 }
             }},
+            {get_cvars().bombsColor, {
+                {
+                    .arc = "Alink", // Bombs used by Link
+                    .modelFileName = "al_bomb.bmd",
+                    .textureName = "al_bomb",
+                },
+                {
+                    .arc = "O_gD_bomb", // Get Item model
+                    .modelFileName = "o_gd_al_bomb.bmd",
+                    .textureName = "al_bomb",
+                },
+                {
+                    .arc = "O_mD_bomb", // Shop model
+                    .modelFileName = "o_md_al_bomb.bmd",
+                    .textureName = "al_bomb",
+                }
+            }},
+            {get_cvars().waterBombsColor, {
+                {
+                    .arc = "Alink", // Water Bombs used by Link
+                    .modelFileName = "pg.bmd",
+                    .textureName = "bg_tex01",
+                },
+                {
+                    .arc = "O_gD_PG", // Get Item model
+                    .modelFileName = "o_gd_al_pg.bmd",
+                    .textureName = "bg_tex01_s_iwasawa",
+                },
+                {
+                    .arc = "O_mD_PG", // Shop model
+                    .modelFileName = "o_md_al_pg.bmd",
+                    .textureName = "bg_tex01_s_iwasawa",
+                }
+            }},
             {get_cvars().spinnerColor, {
                 {
                     .arc = "Alink", // Spinner used by Link
@@ -721,6 +932,23 @@ std::unordered_map<ConfigVarHandle, std::list<TextureReplacementData>>& get_text
                     .arc = "O_gD_SP", // Get Item Model
                     .modelFileName = "o_gd_al_sp.bmd",
                     .textureName = "al_SP",
+                }
+            }},
+            {get_cvars().bomblingsColor, {
+                {
+                    .arc = "Alink", // Bomblings used by Link
+                    .modelFileName = "pb.bmd",
+                    .textureName = "pb_tex01",
+                },
+                {
+                    .arc = "O_gD_BI", // Get Item model
+                    .modelFileName = "o_gd_al_bi.bmd",
+                    .textureName = "bi_tex02",
+                },
+                {
+                    .arc = "O_mD_bi", // Shop model
+                    .modelFileName = "o_md_al_bi.bmd",
+                    .textureName = "bi_tex02",
                 }
             }},
             {get_cvars().linkHairColor, {
